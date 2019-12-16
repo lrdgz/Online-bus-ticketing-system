@@ -33,7 +33,6 @@ class OperatorController extends Controller{
      */
     public function store(Request $request){
 
-
         $this->validate($request, [
             'operator_name' => 'required',
             'operator_email' => 'required',
@@ -52,14 +51,17 @@ class OperatorController extends Controller{
         $operator->operator_address = $request->operator_address;
         $operator->operator_phone = $request->operator_phone;
         $operator->operator_logo = $image_name;
+        $operator->status = $request->status == 'on' ? 0 : 1;
 
         $operator->save();
 
-        return redirect()->back()->with('flash_message_success', 'Operator Added Successfully!');
+        return redirect()->back()->with('msg', 'Operator Added Successfully!');
 
+/*
         $id = $request::get('operator_id');
         $operators = Operator::where('operator_id',$id);
         return view('admin.operators.operator-list', compact('operators'));
+*/
     }
 
     /**

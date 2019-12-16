@@ -21,3 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Operator Routes
 Route::resource('operator', 'OperatorController');
+
+//Bus Routes
+Route::resource('bus', 'BusController');

@@ -19,9 +19,9 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
+            <a class="nav-link" href="{{ route('bus.index') }}">
                 <i class="material-icons">library_books</i>
-                <p>Typography</p>
+                <p>Buses List</p>
             </a>
         </li>
         <li class="nav-item ">

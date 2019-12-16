@@ -17,7 +17,7 @@ class CreateBusesTable extends Migration
             $table->bigIncrements('bus_id');
             $table->string('bus_name');
             $table->string('bus_code');
-            $table->integer('operator_id_FX');
+            $table->integer('operator_id');
             $table->integer('total_seats');
             $table->boolean('status')->default(0);
             $table->timestamps();

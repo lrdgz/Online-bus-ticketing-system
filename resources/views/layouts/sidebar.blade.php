@@ -13,9 +13,9 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
+            <a class="nav-link" href="{{ route('operator.index') }}">
                 <i class="material-icons">content_paste</i>
-                <p>Table List</p>
+                <p>Operators List</p>
             </a>
         </li>
         <li class="nav-item ">

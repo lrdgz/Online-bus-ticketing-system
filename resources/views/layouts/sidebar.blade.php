@@ -25,15 +25,15 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
+            <a class="nav-link" href="{{ route('region.index') }}">
                 <i class="material-icons">bubble_chart</i>
-                <p>Icons</p>
+                <p>Region List</p>
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="./map.html">
+            <a class="nav-link" href="{{ route('sub-region.index') }}">
                 <i class="material-icons">location_ons</i>
-                <p>Maps</p>
+                <p>Sub Region List</p>
             </a>
         </li>
         <li class="nav-item ">

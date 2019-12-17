@@ -24,3 +24,9 @@ Route::resource('operator', 'OperatorController');
 
 //Bus Routes
 Route::resource('bus', 'BusController');
+
+//Region Routes
+Route::resource('region', 'RegionController');
+
+//Sub Region Routes
+Route::resource('sub-region', 'SubRegionController');
